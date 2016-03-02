@@ -5,7 +5,7 @@ Shell script for answering complex questions
 Choose.sh is the main engine of this application.
 ```
 ./choose.sh
-# Will return eather YES or NO
+# Will return either YES or NO
 ```
 
 You can also include parameters to choose from:
@@ -14,7 +14,7 @@ You can also include parameters to choose from:
 # Will return 'Banana' or 'Apple'
 ```
 
-You can even write as many items to choose from as you'd like
+You can even write as many options to choose from as you'd like
 ```
 ./choose.sh Banana Apple Mango Melon
 # Will return 'Banana' or 'Apple' or 'Mango' or 'Melon'
