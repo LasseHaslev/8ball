@@ -5,20 +5,20 @@ Shell script for answering complex questions
 Choose.sh is the main engine of this application.
 ```
 ./choose.sh
+# Will return eather YES or NO
 ```
-This will return eather YES or NO
 
 You can also include parameters to choose from:
 ```
 ./choose.sh Banana Apple
+# Will return 'Banana' or 'Apple'
 ```
-Will return 'Banana' or 'Apple'
 
 You can even write as many items to choose from as you'd like
 ```
 ./choose.sh Banana Apple Mango Melon
+# Will return 'Banana' or 'Apple' or 'Mango' or 'Melon'
 ```
-Will return 'Banana' or 'Apple' or 'Mango' or 'Melon'
 
 ### 8ball.sh
 Uses the engine of choose.sh to simulate an 8ball answering ball
