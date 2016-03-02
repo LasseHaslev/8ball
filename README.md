@@ -25,5 +25,5 @@ Uses the engine of choose.sh to simulate an 8ball answering ball
 ```
 # Is 8ball the coolest script ever?
 ./8ball.sh
+# Will return 'Without a doubt'. ( or another answer... )
 ```
-Will return 'Without a doubt'
