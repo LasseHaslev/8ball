@@ -9,8 +9,8 @@ composer install
 This will install the dependencies for this application
 
 #### Help
-For information of this application run:
 ```
+# For information of this application run:
 ./ask.php
 ```
 
@@ -19,6 +19,9 @@ Choose.sh is the main engine of this application.
 ```
 ./ask.php choose
 # Will return YES or NO
+```
+
+You can even add options to choose from
 ```
 ./ask.php choose Banana Apple
 # Will return 'Banana' or 'Apple'
