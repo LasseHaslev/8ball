@@ -39,7 +39,7 @@ class Choose extends Command
         $items = $input->getArgument( 'items' );
 
         // Check if we should print the question
-        $question = $input->getOption( 'question' );
+        $question = $input->getOption( 'question-input' );
         if ( $question ) {
             $output->writeln( $question );
         }
