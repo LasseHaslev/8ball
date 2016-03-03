@@ -21,7 +21,7 @@ Choose.sh is the main engine of this application.
 # Will return YES or NO
 ```
 
-You can even add options to choose from
+You can add options to choose from
 ```
 ./ask.php choose Banana Apple
 # Will return 'Banana' or 'Apple'
