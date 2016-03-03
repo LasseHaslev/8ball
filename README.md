@@ -1,29 +1,39 @@
-# 8ball
+# Ask shell script
 Shell script for answering complex questions
 
-### choose.sh
-Choose.sh is the main engine of this application.
+## Installation
+Make sure you have composer installed, and run:
 ```
-./choose.sh
-# Will return either YES or NO
+composer install
+```
+This will install the dependencies for this application
+
+#### Help
+For information of this application run:
+```
+./ask.php
 ```
 
-You can also include parameters to choose from:
+### Choose
+Choose.sh is the main engine of this application.
 ```
-./choose.sh Banana Apple
+./ask.php choose
+# Will return YES or NO
+```
+./ask.php choose Banana Apple
 # Will return 'Banana' or 'Apple'
 ```
 
 You can even write as many options to choose from as you'd like
 ```
-./choose.sh Banana Apple Mango Melon
+./ask.php choose Banana Apple Mango Melon
 # Will return 'Banana' or 'Apple' or 'Mango' or 'Melon'
 ```
 
-### 8ball.sh
-Uses the engine of choose.sh to simulate an 8ball answering ball
+### 8ball
+Uses the engine of Choose to simulate an 8ball answering ball
 ```
 # Is 8ball the coolest script ever?
-./8ball.sh
+./ask.php 8ball
 # Will return 'Without a doubt'. ( or another answer... )
 ```
