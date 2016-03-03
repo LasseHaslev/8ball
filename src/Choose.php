@@ -3,6 +3,7 @@
 namespace LasseHaslev\Console\Commands;
 
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -22,7 +23,8 @@ class Choose extends Command
     {
         $this->setName( 'choose' )
             ->setDescription( 'Helps you choose between seperate questions.' )
-            ->addArgument( 'items', InputArgument::IS_ARRAY, 'Optional: Insert what items you want to choose from. ( Seperated by space )' );
+            ->addArgument( 'items', InputArgument::IS_ARRAY, 'Optional: Insert what items you want to choose from. ( Seperated by space )' )
+            ->addOption( 'question-input', 'i', InputOption::VALUE_OPTIONAL, 'Insert your question' );
     }
 
     /**
@@ -35,6 +37,12 @@ class Choose extends Command
 
         // Get the array with items to choose from
         $items = $input->getArgument( 'items' );
+
+        // Check if we should print the question
+        $question = $input->getOption( 'question' );
+        if ( $question ) {
+            $output->writeln( $question );
+        }
 
         // Check if we got some items to choose from
         if ( $items ) {
